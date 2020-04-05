@@ -94,7 +94,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -113,10 +113,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'pos',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'kategori',
+            TAGS: 'tag',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/notes/',
@@ -149,7 +149,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari">
     </div>
 
                 </td>
@@ -166,7 +166,7 @@
         
     <div class="widget-wrap" id="categories">
         <h3 class="widget-title">
-            <span>categories</span>
+            <span>kategori</span>
             &nbsp;
             <a id="allExpand" href="#">
                 <i class="fa fa-angle-double-down fa-2x"></i>
@@ -182,7 +182,16 @@
                             &nbsp;
                             默认
                         </a>
+                         <ul class="unstyled" id="tree"> 
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            hexo
+                        </a>
                          <ul class="unstyled" id="tree">  <li class="file"><a href="/notes/1970/01/01/hello-world/">Hello World</a></li>  <li class="file"><a href="/notes/2020/04/05/first/">first</a></li>  </ul> 
+                    </li> 
+                     </ul> 
                     </li> 
                      </ul> 
     </div>
@@ -261,7 +270,7 @@
     </div>
     <div class="layout-wrap-inner list-categories">
         
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/notes/categories/%E9%BB%98%E8%AE%A4/">默认</a><span class="category-list-count">2</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/notes/categories/%E9%BB%98%E8%AE%A4/">默认</a><span class="category-list-count">2</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/notes/categories/%E9%BB%98%E8%AE%A4/hexo/">hexo</a><span class="category-list-count">2</span></li></ul></li></ul>
         
     </div>
 </section></section>
